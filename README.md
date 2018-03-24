@@ -17,20 +17,20 @@
 
 还拿上面的例子说，你使用小米手机，但是你在应用宝中下载软件，这时你就会遇到这种情况，安装软件时会需要你点击是否同意安装，如下：
 
-![应用宝下载](C:\Users\wanggk\Desktop\应用宝下载.gif)
+![应用宝下载](https://github.com/GinkWang/SmartInstallDemo/blob/master/images/%E5%BA%94%E7%94%A8%E5%AE%9D%E4%B8%8B%E8%BD%BD.gif)
 
 按照前文的逻辑来说，这是正常的情况。因为应用宝在 MIUI 中也只是个普通应用啊，没有 Root 就没法使用静默安装。下图是应用宝的设置界面：
-![Ss_2018-03-24_22-21-54](C:\Users\wanggk\Desktop\Ss_2018-03-24_22-21-54.png)
+![Ss_2018-03-24_22-21-54](https://github.com/GinkWang/SmartInstallDemo/blob/master/images/%E5%BA%94%E7%94%A8%E5%AE%9D%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png)
 
 但是可以在上图中看到，应用宝有一个备用解决方案——省心装，关于该功能的介绍是 `安装时无须频繁点击下一步与完成` 。看来还行，我们开启一下这个功能看看。
 
 点击开启之后，会提示要授予应用宝辅助功能权限。于是我们就去辅助功能界面去授权：
 
-![Ss_2018-03-24_22-26-16](C:\Users\wanggk\Desktop\Ss_2018-03-24_22-26-16.png)
+![Ss_2018-03-24_22-26-16](https://github.com/GinkWang/SmartInstallDemo/blob/master/images/%E8%BE%85%E5%8A%A9%E7%95%8C%E9%9D%A2.png)
 
 这个界面详细介绍了关于省心装的功能，我们点击右上方开启。然后回到应用宝安装一个应用试一下：
 
-![应用宝省心装](D:\SoftWare\万彩办公大师OfficeBox\应用宝省心装.gif)
+![应用宝省心装](https://github.com/GinkWang/SmartInstallDemo/blob/master/images/%E5%BA%94%E7%94%A8%E5%AE%9D%E7%9C%81%E5%BF%83%E8%A3%85.gif)
 
 可以看到，就如同应用宝对于该功能介绍的那样，我在选择安装软件之后，就没用我再点击确认安装什么的了。一切步骤全是应用宝替我搞定的。这样的实现虽然还是显示安装界面，不如静默安装安静，但是也可以满足我的需求，实现我想要的效果。
 
@@ -208,7 +208,7 @@ private void doInstallAPK(File pFile) {
 逻辑很简单，就是定义两个按钮，一个是去开启辅助功能，一个是选择 APK 文件进行安装（注意，这里只是核心代码，全部代码见文末链接）。
 
 最后，看一下实际效果：
-![实际效果](D:\SoftWare\万彩办公大师OfficeBox\实际效果.gif)
+![实际效果](https://github.com/GinkWang/SmartInstallDemo/blob/master/images/%E5%AE%9E%E9%99%85%E6%95%88%E6%9E%9C.gif)
 
 符合我们的预期。
 
